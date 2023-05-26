@@ -25,8 +25,7 @@
                 }
                 else {
                     alert("5% discount")
-                }
-                
+                } 
             }
             else if(percent>=70 && percent<=79){
                 alert("15% discount")
@@ -35,9 +34,42 @@
                 alert("10% discount")
             }
         }
+        else if (area=="saddar"){
+            var qualification=prompt("Enter your qualification")
+            
+            if(qualification=="Intermediate"){
+               var program=prompt("Enter your program")
+              
+               if(program=="Biology Science"){
+                var percentage=prompt("Enter the percentage")
+               
+                if(percentage>=80 && percentage<=100)
+                alert("60% discount")
+                else if(percentage>=70 && percentage<=79)
+                alert("50% discount")
+                else{
+                    alert("no available")
+                }
+               }
+               else if(program=="Computer Science")
+               {
+                alert("30% discount")
+               }
+               else if(program=="Commerce"){
+                alert("15% discount")
+               }
+               else if(program=="Arts"){
+                alert("10% discount")
+               }
+               else{
+                alert("No scolarship")
+               }
+               
+            }
+        }
         else{
-            alert("no Scolarship")
+            alert("no scolership")
         }
     </script>
-</body>
+</body> 
 </html>
