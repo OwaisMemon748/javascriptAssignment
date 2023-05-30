@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        var area=prompt("Enter the Area")
+        var area=prompt("Enter the Area (lowercase(alphabad)without spacing)")
         
         if(area=="liyari"){
             var percent=prompt("Enter the percentage")
@@ -35,12 +35,12 @@
             }
         }
         else if (area=="saddar"){
-            var qualification=prompt("Enter your qualification")
+            var qualification=prompt("Enter your qualification (lowercase(alphabad)without spacing)")
             
-            if(qualification=="Intermediate"){
-               var program=prompt("Enter your program")
+            if(qualification=="intermediate"){
+               var program=prompt("Enter your program (lowercase(alphabad)without spacing)")
               
-               if(program=="Biology Science"){
+               if(program=="biologyscience"){
                 var percentage=prompt("Enter the percentage")
                
                 if(percentage>=80 && percentage<=100)
@@ -51,11 +51,11 @@
                     alert("no available")
                 }
                }
-               else if(program=="Computer Science")
+               else if(program=="computerscience")
                {
                 alert("30% discount")
                }
-               else if(program=="Commerce"){
+               else if(program=="commerce"){
                 alert("15% discount")
                }
                else if(program=="Arts"){
@@ -64,11 +64,31 @@
                else{
                 alert("No scolarship")
                }
-
+            }
+        }
+        else if (area=="garden"){
+              var percent=prompt("Enter the percentage")
+            if(percent>=80 && percent<=100){
+                var building=prompt("Enter the building (lowercase(alphabad)without spacing)")
+                if (building=="shertantower"){
+                    alert("40% discount")
+                }
+                else if(building=="shalimargarden"){
+                    alert("35% discount")
+                }
+                else if(building=="gareeb nawaz residency"){
+                   alert("25% discount")
+                }
+                else if(building=="saylanigarden"){
+                    alert("15% discount")
+                } 
+                else{
+                    alert("5% discount")
+                }
             }
         }
         else{
-            alert("no scolership")
+            alert("no scolarship")
         }
     </script>
 </body> 
